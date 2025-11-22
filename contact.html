@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Salterra Naturals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a class="nav-logo" href="index.html">
+            <img src="assets/images/Salterra%20(140%20x%20180%20px).svg" alt="Salterra Naturals logo" />
+          </a>
+          <button class="nav-toggle" data-nav-toggle aria-controls="primary-nav" aria-expanded="false">Menu</button>
+          <div class="nav-links" id="primary-nav" data-nav-links>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="how-we-work.html">How We Work</a>
+            <a href="about.html">About</a>
+            <a class="nav-cta" href="contact.html">Contact / Enquiry</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container two-column">
+          <div>
+            <p class="badge">Response within 1 business day</p>
+            <h1>Request wholesale pricing or submit shipment details.</h1>
+            <p>Share your SKU list, estimated volume, and target delivery window. We will reply with catalogue pages, FOB pricing, and timelines.</p>
+          </div>
+          <div>
+            <div class="card">
+              <h3>Alternate Contact</h3>
+              <ul class="list">
+                <li>Email: export@salterranaturals.com</li>
+                <li>WhatsApp: +92 300 000 0000</li>
+                <li>Lahore office: MM Alam Road</li>
+                <li>Karachi port office: Keamari</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container two-column">
+          <div>
+            <h2>Enquiry Form</h2>
+            <p>Fields marked * are required. Please provide as much detail as possible so we can tailor pricing.</p>
+          </div>
+          <form data-validate>
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company *</label>
+              <input id="company" name="company" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="country">Country *</label>
+              <input id="country" name="country" type="text" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form-group">
+              <label for="whatsapp">WhatsApp (optional)</label>
+              <input id="whatsapp" name="whatsapp" type="tel" placeholder="Include country code" />
+            </div>
+            <div class="form-group">
+              <label>Product Categories *</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="categories" value="lamps" /> Salt Lamps</label>
+                <label><input type="checkbox" name="categories" value="tiles" /> Salt Tiles & Bricks</label>
+                <label><input type="checkbox" name="categories" value="bulk" /> Bulk Himalayan Salt</label>
+                <label><input type="checkbox" name="categories" value="bath" /> Bath Salts & Finished Goods</label>
+                <label><input type="checkbox" name="categories" value="cooking" /> Salt Cooking Blocks</label>
+                <label><input type="checkbox" name="categories" value="massage" /> Massage Stones & Carved Items</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="volume">Approximate Volume *</label>
+              <select id="volume" name="volume" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="trial">Trial pallet (up to 2 pallets)</option>
+                <option value="lcl">LCL / 3–5 pallets</option>
+                <option value="20ft">20' container</option>
+                <option value="40ft">40' container</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required placeholder="Share target specs, packaging, incoterms, delivery window"></textarea>
+            </div>
+            <button class="btn-primary" type="submit">Request Wholesale Pricing</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <h4>Salterra Naturals</h4>
+          <p>Pakistan-based exporter of Himalayan salt products for wholesale partners worldwide.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="how-we-work.html">How We Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>export@salterranaturals.com</li>
+            <li>WhatsApp: +92 300 000 0000</li>
+            <li>Lahore & Karachi offices</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container subfooter">
+        <p>© <span id="year">2025</span> Salterra Naturals. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/main.js" defer></script>
+  </body>
+</html>
