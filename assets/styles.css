@@ -931,18 +931,23 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .how-we-work-timeline-section {
+    padding: 48px 0;
+  }
+
   .timeline-container {
     padding: 0 16px;
+    margin-top: 32px;
   }
 
   .timeline-line {
-    left: 24px;
+    left: 20px;
   }
 
   .timeline-item {
     grid-template-columns: auto 1fr;
-    gap: 16px;
-    margin-bottom: 48px;
+    gap: 12px;
+    margin-bottom: 32px;
   }
 
   .timeline-item-left,
@@ -953,13 +958,34 @@ footer {
   .timeline-content {
     grid-column: 2;
     text-align: left !important;
+    padding: 16px;
+    border-radius: 12px;
   }
 
   .timeline-node {
     grid-column: 1;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
+    font-size: 0.75rem;
+  }
+
+  .timeline-image {
+    margin-bottom: 12px;
+  }
+
+  .timeline-image img {
+    max-height: 120px;
+    object-fit: cover;
+  }
+
+  .timeline-content h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .timeline-content p {
     font-size: 0.875rem;
+    line-height: 1.5;
   }
 
   .timeline-date {
