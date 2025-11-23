@@ -588,7 +588,7 @@ section {
 
 .how-we-work-hero img {
   width: 100%;
-  height: auto;
+  height: 120%;
   display: block;
   object-fit: contain;
   margin: auto;
