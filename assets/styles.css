@@ -472,11 +472,18 @@ section {
   margin: 32px 0;
 }
 
+.certifications-grid .icon-wrapper {
+  width: 120px; /* uniform box */
+  height: 120px; /* uniform box */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; /* centers column */
+}
+
 .certifications-grid img {
-  width: 100%;
-  height: auto;
-  max-width: 120px;
-  max-height: 80px;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
@@ -1269,8 +1276,7 @@ footer {
   }
 
   .popup-image {
-    border-radius: 0;
-    height: 200px;
+    display: none;
   }
 
   .popup-close {
