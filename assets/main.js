@@ -47,3 +47,52 @@ if (heroBrightness) {
   window.addEventListener("resize", updateBrightness);
   updateBrightness();
 }
+
+// Popup functionality
+const popup = document.querySelector("[data-popup]");
+const popupClose = document.querySelector("[data-popup-close]");
+const popupForm = document.querySelector(".popup-form");
+
+if (popup && popupClose) {
+  // Show popup after 3 seconds on page load
+  setTimeout(() => {
+    popup.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }, 3000);
+
+  // Close popup
+  const closePopup = () => {
+    popup.classList.remove("active");
+    document.body.style.overflow = "";
+  };
+
+  popupClose.addEventListener("click", closePopup);
+
+  // Close on overlay click
+  popup.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      closePopup();
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && popup.classList.contains("active")) {
+      closePopup();
+    }
+  });
+
+  // Handle form submission
+  if (popupForm) {
+    popupForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = popupForm.querySelector('input[type="email"]').value;
+      if (email) {
+        // Here you would typically send the email to your backend
+        console.log("Email submitted:", email);
+        alert("Thank you! We'll send your free samples and quotes shortly.");
+        closePopup();
+      }
+    });
+  }
+}
