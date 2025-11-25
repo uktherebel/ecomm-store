@@ -96,3 +96,46 @@ if (popup && popupClose) {
     });
   }
 }
+
+// Traceability tooltips / drawers
+const traceNodes = document.querySelectorAll("[data-trace-node]");
+if (traceNodes.length) {
+  const mediaQuery = window.matchMedia("(max-width: 900px)");
+
+  const closeAllTrace = () => {
+    traceNodes.forEach((node) => {
+      node.classList.remove("is-open");
+      const toggle = node.querySelector("[data-trace-toggle]");
+      if (toggle) {
+        toggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  };
+
+  traceNodes.forEach((node) => {
+    const toggle = node.querySelector("[data-trace-toggle]");
+    if (!toggle) return;
+
+    toggle.addEventListener("click", () => {
+      const isOpen = node.classList.contains("is-open");
+      const isMobile = mediaQuery.matches;
+
+      if (isMobile) {
+        closeAllTrace();
+      }
+
+      const nextState = !isOpen;
+      if (nextState) {
+        node.classList.add("is-open");
+        toggle.setAttribute("aria-expanded", "true");
+      } else {
+        node.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  });
+
+  mediaQuery.addEventListener("change", () => {
+    closeAllTrace();
+  });
+}

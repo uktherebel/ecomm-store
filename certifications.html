@@ -244,85 +244,158 @@
             </p>
           </div>
 
-          <div class="traceability-flow">
-            <!-- Each step can also host a tiny icon above the title -->
-            <div class="trace-step">
-              <div class="trace-icon">
-                <!-- Mine icon image here -->
+          <div class="traceability-map" role="img" aria-label="Traceability steps from mine to container">
+            <div class="trace-visual" aria-hidden="true"></div>
+            <div class="trace-nodes">
+              <div
+                class="trace-node"
+                style="--x: 16%; --y: 14%;"
+                data-trace-node
+              >
+                <button
+                  type="button"
+                  class="trace-toggle"
+                  aria-expanded="false"
+                  data-trace-toggle
+                >
+                  <span class="trace-step-number" aria-hidden="true">01</span>
+                  <span class="sr-only">Step 01</span>
+                  <span class="trace-step-title">Mine</span>
+                </button>
+                <div class="trace-tooltip">
+                  <h3>Mine</h3>
+                  <p>
+                    Raw Himalayan rock salt is extracted from the Salt Range in
+                    Pakistan, a Triassic-era halite deposit known for its stable
+                    mineral profile.
+                  </p>
+                </div>
               </div>
-              <h3>Mine</h3>
-              <p>
-                Raw Himalayan rock salt is extracted from the Salt Range in
-                Pakistan, a Triassic-era halite deposit known for its stable
-                mineral profile.
-              </p>
-            </div>
 
-            <div class="trace-arrow" aria-hidden="true">→</div>
-
-            <div class="trace-step">
-              <div class="trace-icon">
-                <!-- Sorting icon -->
+              <div
+                class="trace-node"
+                style="--x: 48%; --y: 16%;"
+                data-trace-node
+              >
+                <button
+                  type="button"
+                  class="trace-toggle"
+                  aria-expanded="false"
+                  data-trace-toggle
+                >
+                  <span class="trace-step-number" aria-hidden="true">02</span>
+                  <span class="sr-only">Step 02</span>
+                  <span class="trace-step-title">Sorting</span>
+                </button>
+                <div class="trace-tooltip">
+                  <h3>Sorting</h3>
+                  <p>
+                    Skilled workers manually remove foreign material and
+                    visually grade crystals before they enter the processing
+                    line.
+                  </p>
+                </div>
               </div>
-              <h3>Sorting</h3>
-              <p>
-                Skilled workers manually remove foreign material and visually
-                grade crystals before they enter the processing line.
-              </p>
-            </div>
 
-            <div class="trace-arrow" aria-hidden="true">→</div>
-
-            <div class="trace-step">
-              <div class="trace-icon">
-                <!-- Washing / crushing icon -->
+              <div
+                class="trace-node"
+                style="--x: 79%; --y: 18%;"
+                data-trace-node
+              >
+                <button
+                  type="button"
+                  class="trace-toggle"
+                  aria-expanded="false"
+                  data-trace-toggle
+                >
+                  <span class="trace-step-number" aria-hidden="true">03</span>
+                  <span class="sr-only">Step 03</span>
+                  <span class="trace-step-title">Washing &amp; Crushing</span>
+                </button>
+                <div class="trace-tooltip">
+                  <h3>Washing &amp; Crushing</h3>
+                  <p>
+                    Salt is washed, dried, and milled in food-grade stainless
+                    steel equipment. Grain sizes are created using calibrated
+                    sieves.
+                  </p>
+                </div>
               </div>
-              <h3>Washing & Crushing</h3>
-              <p>
-                Salt is washed, dried, and milled in food-grade stainless steel
-                equipment. Grain sizes are created using calibrated sieves.
-              </p>
-            </div>
 
-            <div class="trace-arrow" aria-hidden="true">→</div>
-
-            <div class="trace-step">
-              <div class="trace-icon">
-                <!-- Grading icon -->
+              <div
+                class="trace-node"
+                style="--x: 24%; --y: 78%;"
+                data-trace-node
+              >
+                <button
+                  type="button"
+                  class="trace-toggle"
+                  aria-expanded="false"
+                  data-trace-toggle
+                >
+                  <span class="trace-step-number" aria-hidden="true">04</span>
+                  <span class="sr-only">Step 04</span>
+                  <span class="trace-step-title">Grading / Lab testing</span>
+                </button>
+                <div class="trace-tooltip">
+                  <h3>Grading / Lab testing</h3>
+                  <p>
+                    Fine, coarse, and extra-coarse fractions are separated and
+                    sampled. Metal detection and moisture checks are performed
+                    before packing.
+                  </p>
+                </div>
               </div>
-              <h3>Grading</h3>
-              <p>
-                Fine, coarse, and extra-coarse fractions are separated and
-                sampled. Metal detection and moisture checks are performed
-                before packing.
-              </p>
-            </div>
 
-            <div class="trace-arrow" aria-hidden="true">→</div>
-
-            <div class="trace-step">
-              <div class="trace-icon">
-                <!-- Packing icon -->
+              <div
+                class="trace-node"
+                style="--x: 53%; --y: 80%;"
+                data-trace-node
+              >
+                <button
+                  type="button"
+                  class="trace-toggle"
+                  aria-expanded="false"
+                  data-trace-toggle
+                >
+                  <span class="trace-step-number" aria-hidden="true">05</span>
+                  <span class="sr-only">Step 05</span>
+                  <span class="trace-step-title">Packing</span>
+                </button>
+                <div class="trace-tooltip">
+                  <h3>Packing</h3>
+                  <p>
+                    Product is filled into sealed, batch-coded bags or retail
+                    packs. Each unit carries information needed for backward
+                    traceability.
+                  </p>
+                </div>
               </div>
-              <h3>Packing</h3>
-              <p>
-                Product is filled into sealed, batch-coded bags or retail packs.
-                Each unit carries information needed for backward traceability.
-              </p>
-            </div>
 
-            <div class="trace-arrow" aria-hidden="true">→</div>
-
-            <div class="trace-step">
-              <div class="trace-icon">
-                <!-- Container icon -->
+              <div
+                class="trace-node"
+                style="--x: 83%; --y: 86%;"
+                data-trace-node
+              >
+                <button
+                  type="button"
+                  class="trace-toggle"
+                  aria-expanded="false"
+                  data-trace-toggle
+                >
+                  <span class="trace-step-number" aria-hidden="true">06</span>
+                  <span class="sr-only">Step 06</span>
+                  <span class="trace-step-title">Containering</span>
+                </button>
+                <div class="trace-tooltip">
+                  <h3>Containering</h3>
+                  <p>
+                    Pallets are wrapped, moisture-protected, and photographed
+                    before loading. Container numbers, seal numbers, and weights
+                    are recorded for your documents.
+                  </p>
+                </div>
               </div>
-              <h3>Palletising & Container</h3>
-              <p>
-                Pallets are wrapped, moisture-protected, and photographed before
-                loading. Container numbers, seal numbers, and weights are
-                recorded for your documents.
-              </p>
             </div>
           </div>
         </div>
@@ -547,5 +620,6 @@
         </p>
       </div>
     </footer>
+    <script src="assets/main.js" defer></script>
   </body>
 </html>
