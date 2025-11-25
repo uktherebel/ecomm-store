@@ -1400,3 +1400,359 @@ footer {
     max-width: 100px;
   }
 }
+
+/* Quality & Certifications page */
+
+.quality-hero-copy h1 {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  margin: 0 0 16px 0;
+}
+
+.quality-hero-copy p {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+.quality-hero-illustration {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* Certifications grid */
+
+.certifications-cards .certification-card {
+  align-items: flex-start;
+}
+
+.certification-logo {
+  width: 120px;
+  height: 80px;
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid var(--color-border-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.certification-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+.certification-logo-text {
+  background-color: rgba(43, 58, 46, 0.06);
+  border-style: dashed;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.certification-note {
+  font-size: 0.8rem;
+  color: rgba(17, 17, 17, 0.7);
+  margin-top: 8px;
+}
+
+/* Lab testing */
+
+.quality-lab-section {
+  align-items: start;
+}
+
+.quality-lab-illustration {
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.quality-lab-copy h2 {
+  margin: 0 0 16px 0;
+}
+
+.quality-lab-copy > p {
+  margin-bottom: 24px;
+}
+
+.quality-lab-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.quality-lab-note {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: rgba(17, 17, 17, 0.75);
+}
+
+/* Traceability flow */
+
+.traceability-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 16px;
+  background-color: -var(--color-background);
+  border-radius: 20px;
+  padding: 24px;
+  border: 1px solid var(--color-border-soft);
+}
+
+.trace-step {
+  flex: 1 1 180px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 18px 18px 16px;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+}
+
+.trace-step h3 {
+  margin: 8px 0 8px;
+  font-size: 1rem;
+}
+
+.trace-step p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.trace-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background-color: rgba(43, 58, 46, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trace-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.trace-arrow {
+  align-self: center;
+  font-size: 1.5rem;
+  color: rgba(17, 17, 17, 0.45);
+}
+
+/* Downloads */
+
+.download-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.download-card button {
+  margin-top: auto;
+}
+
+/* Quality FAQ tweaks */
+
+#quality-faq .card h3 {
+  font-size: 1.1rem;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 768px) {
+  .traceability-flow {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .trace-arrow {
+    display: none;
+  }
+
+  .quality-hero-illustration,
+  .quality-lab-illustration {
+    max-width: 260px;
+  }
+}
+
+/* Quality & Certifications – Structura-style FAQ */
+
+.quality-faq-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.quality-faq-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.faq-tag {
+  border-radius: 999px;
+  border: 1px solid rgba(17, 17, 17, 0.2);
+  background-color: #fff;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(17, 17, 17, 0.85);
+  cursor: default;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.faq-tag.active {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.quality-faq-meta {
+  max-width: 320px;
+  font-size: 0.9rem;
+  color: rgba(17, 17, 17, 0.75);
+}
+
+.quality-faq-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(260px, 2fr);
+  gap: 32px;
+  align-items: flex-start;
+}
+
+/* Accordion list */
+
+.quality-faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-item {
+  border-radius: 16px;
+  border: 1px solid var(--color-border-soft);
+  background-color: #fff;
+  padding: 12px 16px;
+}
+
+.faq-item[open] {
+  box-shadow: 0 4px 16px rgba(17, 17, 17, 0.06);
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question {
+  font-weight: 600;
+  font-size: 0.98rem;
+  color: var(--color-text-dark);
+}
+
+.faq-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(17, 17, 17, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.faq-item[open] .faq-icon {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.faq-body {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(17, 17, 17, 0.08);
+}
+
+.faq-body p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(17, 17, 17, 0.75);
+}
+
+/* Right-hand help card */
+
+.quality-faq-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #fff;
+}
+
+.quality-faq-aside-image {
+  width: 100%;
+  max-height: 160px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--color-bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.quality-faq-aside-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quality-faq-aside h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.1rem;
+}
+
+.quality-faq-aside p {
+  margin: 0 0 4px 0;
+  font-size: 0.95rem;
+  color: rgba(17, 17, 17, 0.8);
+}
+
+.quality-faq-aside-list {
+  margin-bottom: 8px;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 900px) {
+  .quality-faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quality-faq-aside {
+    order: -1; /* show help card above FAQs on mobile if you want */
+  }
+}
+
+@media (max-width: 768px) {
+  .quality-faq-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quality-faq-meta {
+    max-width: 100%;
+  }
+}
